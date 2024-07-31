@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGBA color generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1><span style="color: rgb(245, 16, 16);">R</span><span style="color: rgb(6, 178, 6)">G</span><span style="color: rgb(65, 65, 239);">B</span><span style="color: yellow;">A</span> Color Calculator</h1>
+
+    <div class="main-container">
+        <div class="sliders-container">
+            <h2 style="color: red;">RED</h2>
+            <div class="slider-container">
+                <div class="container red-container">
+                    <div class="path red-path">
+                        <div class="element red-element"></div>
+                    </div>
+                </div>
+            
+                <div class="info-label">
+                    <h3 class="red-label">0</h3>
+                </div>
+            </div>
+
+            <h2 style="color: green;">GREEN</h2>
+            <div class="slider-container">
+                <div class="container green-container">
+                    <div class="path green-path">
+                        <div class="element green-element"></div>
+                    </div>
+                </div>
+            
+                <div class="info-label">
+                    <h3 class="green-label">0</h3>
+                </div>
+            </div>
+
+            <h2 style="color: blue;">BLUE</h2>
+            <div class="slider-container">
+                <div class="container blue-container">
+                    <div class="path blue-path">
+                        <div class="element blue-element"></div>
+                    </div>
+                </div>
+            
+                <div class="info-label">
+                    <h3 class="blue-label">0</h3>
+                </div>
+            </div>
+
+            
+        </div>
+    
+        <div class="color-container">
+            <div class="output"></div>
+            <div class="rgba-info">
+                <input type="text">
+                <button>copy</button>
+            </div>
+
+            <div class="opacity-container">
+                <div class="opacity-path">
+                    <div class="opacity-element"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--foooter section-->
+    <div id="end">
+        <h4>Made by <a href="https://github.com/tsn67?tab=overview&from=2024-07-01&to=2024-07-30">Tom Sebastian</a></h4>
+        <h5>@ tom_sn 2024</h5>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

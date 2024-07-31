@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:wght@100..900&family=Khula:wght@300;400;600;700;800&family=Love+Ya+Like+A+Sister&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    position: relative;
+    background: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    font-family: "Inria Sans",sans-serif;
+}
+
+h3 {
+    color: black;
+    font-weight: bold;
+}
+
+h1 {
+    color: white;
+    margin-top: 3rem;
+    font-size: 2.4rem;
+}
+
+.container {
+    width: 400px;
+    height: 80px;
+    background-color: white;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.path {
+    background: linear-gradient(to left,rgb(203, 200, 200),gray);
+    width: 268px;
+    height: 20px;
+    position: relative;
+    border: brown solid 1px;
+}
+
+.element {
+    box-sizing: border-box;
+    top: -3px;
+    left: 0px;
+    position: absolute;
+    height: 26px;
+    width: 13px;
+    border: solid black 2px;
+    background: oldlace;
+    border-radius: 3px;
+}
+
+.info-label {
+    width: 60px;
+    height: 50px;
+    border-radius: 3px;
+    background-color: white;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+body > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sliders-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+h2 {
+    color: white;
+    align-self: flex-start;
+    margin-left: 45%;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 70px;
+}
+
+.output {
+    min-width: 200px;
+    max-width: 250px;
+    aspect-ratio: 1/1;
+    background: pink;
+    outline: 3px solid white;
+    border-radius: 4px;
+}
+
+.color-container {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    outline: solid white 1px;
+    padding: 40px;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: black;
+}
+
+.color-container::after {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: 408px;
+    height: 408px;
+    z-index: -1;
+    background: linear-gradient(indigo,blue,red,yellow,orange,yellowgreen,green,darkgreen);
+    border-radius: 4px;
+}
+
+input {
+    border: none;
+    width: 170px;
+    height: 40px;
+    background: rgb(55, 48, 86);
+    padding: 4px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+    color: greenyellow;
+    border-radius: 4px;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    box-sizing: border-box;
+    border: none;
+    padding: 4px;
+    height: 40px;
+    background-color: rgb(44, 42, 42);
+    color: seagreen;
+    outline: solid white 1px;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.rgba-info {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover {
+    color: white;
+    background-color: seagreen;
+}
+
+#end {
+    width: 100%;
+    height: 30px;
+    padding: 30px;
+    background-color: rgb(15, 36, 57);
+    display: flex;
+    flex-direction: column;
+}
+
+#end h4 {
+    color: white;
+    font-weight: lighter;
+}
+
+#end a {
+    font-weight: normal;
+    color: rgb(151, 219, 251);
+    text-decoration: none;
+}
+
+#end h5 {
+    color: lightcyan;
+    font-weight: normal;
+}
+
+#end h5,a,h4 {
+    font-size: 16px;
+}
+
+
+.opacity-container {
+    margin-top: 80px;
+    position: absolute;
+    left: 25%;
+    top: 87%;
+    width: 200px;
+    height: 40px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.opacity-container::before {
+    content: 'opacity';
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    font-weight: normal;
+    color: yellow;
+
+}
+
+
+.opacity-path {
+    width: 160px;
+    background: linear-gradient(to right,gray,white);
+    height: 20px;
+    border: solid 1px red;
+    position: relative;
+}
+
+.opacity-element {
+    width: 10px;
+    height: 25px;
+    background: white;
+    outline: solid black 2px;
+    z-index: 10;
+    position: absolute;
+    top: -3px;
+    left: 0px;
+    border-radius: 2px;
+}
+
+#end a:hover {
+    color: yellowgreen;
+}
